@@ -1,0 +1,51 @@
+{
+  "name": "coi-tracker-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for COI (Certificate of Insurance) tracking — analyze certificates, check expirations, verify coverage requirements, and manage vendor compliance",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "coi-tracker-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "coi",
+    "certificate-of-insurance",
+    "insurance-compliance",
+    "vendor-management",
+    "risk-management",
+    "construction-insurance",
+    "general-liability",
+    "workers-compensation",
+    "additional-insured",
+    "insurance-tracking",
+    "compliance",
+    "subcontractor-management",
+    "procurement"
+  ],
+  "author": "Crawde",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crawde/coi-tracker-mcp"
+  },
+  "homepage": "https://vendorshield.app",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}
