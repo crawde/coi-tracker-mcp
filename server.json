@@ -1,0 +1,42 @@
+{
+  "name": "coi-tracker-mcp",
+  "description": "MCP server for COI (Certificate of Insurance) tracking — analyze certificates, check expirations, verify coverage requirements, and manage vendor compliance",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "analyze_coi",
+      "description": "Parse a Certificate of Insurance and extract named insured, coverage types, policy numbers, limits, expiration dates, and compliance flags"
+    },
+    {
+      "name": "check_coi_expiration",
+      "description": "Check if a policy is expired or expiring soon with urgency assessment and recommended actions"
+    },
+    {
+      "name": "coi_requirements",
+      "description": "Get standard COI requirements for an industry — required coverages, minimum limits, and endorsements"
+    },
+    {
+      "name": "verify_coi_compliance",
+      "description": "Cross-reference a vendor's COI against industry requirements and identify coverage gaps"
+    },
+    {
+      "name": "coi_info",
+      "description": "Get COI management best practices, ACORD 25 form information, and common compliance failures"
+    }
+  ],
+  "install": {
+    "npm": "coi-tracker-mcp"
+  },
+  "usage": {
+    "claude_desktop": {
+      "command": "npx",
+      "args": ["-y", "coi-tracker-mcp"]
+    },
+    "vscode": {
+      "command": "npx",
+      "args": ["-y", "coi-tracker-mcp"]
+    }
+  },
+  "homepage": "https://vendorshield.app",
+  "repository": "https://github.com/crawde/coi-tracker-mcp"
+}
